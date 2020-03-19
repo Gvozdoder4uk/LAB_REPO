@@ -1,0 +1,25 @@
+{% extends "base_generic.html" %}
+{% block title%}
+<title>Библа</title>
+{%endblock%}
+{% block content %}
+<div class="container">
+<h1>Локальная домашняя страница Библы!</h1>
+
+  <p>Бобро пожаловать на <em>Библу</em>, базовый сайт для оттачивания процесса разработки основного Портала ИТ</p>
+</div>
+
+<div class="container">
+<div class="jumbotronio" id="jumbo2">
+<h2>Динамический Контемп</h2>
+
+  <p>На текущий момент зараженных коронавирусом:</p>
+  <ul>
+    <li><strong>Книжули:</strong> {{ книжули }}</li>
+    <li><strong>Копий:</strong> {{ num_instances }}</li>
+    <li><strong>Копий и стрел:</strong> {{ num_instances_available }}</li>
+    <li><strong>Создателей мира:</strong> {{ num_authors }}</li>
+  </ul>
+</div>
+    </div>
+{% endblock %}
